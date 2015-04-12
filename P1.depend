@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1427933932 source:/media/veronnixx/college2/cs40/P1/city.cpp
+	<stdio.h>
+
+1428647844 source:/home/veronnixx/P1-master/city.cpp
+	<stdio.h>
+	"city.h"
+
+1428706296 /home/veronnixx/P1-master/city.h
+
+1428637880 source:/home/veronnixx/P1-master/main.cpp
+	"vector.h"
+	<stdlib.h>
+	<stdio.h>
+
+1428647621 /home/veronnixx/P1-master/vector.h
+	"city.h"
+
