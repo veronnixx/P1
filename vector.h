@@ -10,6 +10,6 @@ typedef struct Vector
   int count;
 } Vector;
 
-void initialize(Vector *cities);
+void initialize(Vector cities);
 
 #endif

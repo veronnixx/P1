@@ -5,7 +5,6 @@
 
 void initialize(Vector cities)
 {
-  initialize(cities->cityArray);
   int i;
   for (i=0;i < 10; i++)
  {
