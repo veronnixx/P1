@@ -1,4 +1,3 @@
-
 simulator.out: main.o city.o vector.o
 	g++ -Wall -ansi -g -o simulator.out main.o city.o vector.o
 

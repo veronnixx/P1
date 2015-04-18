@@ -3,7 +3,7 @@
 #include "vector.h"
 #include "city.h"
 
-void initialize(Vector *cities)
+void initialize(Vector cities)
 {
   initialize(cities->cityArray);
   int i;

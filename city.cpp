@@ -9,11 +9,4 @@ void initialize(City *cityArray)
   cityArray->state = NULL;
   cityArray->airport = NULL; //always has 3 letters + 1 space for '/0' character
   cityArray->population = 0;
-
-}
-
-
-int main()
-{
-  return 0;
 }
