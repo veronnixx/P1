@@ -9,7 +9,7 @@ typedef struct City
   char *state;
   char airport; //always has 3 letters + 1 space for '/0' character
   int population;
-  } City; //City struct
+} City; //City struct
 
-void initialize(City *cityArray);
+void initialize(City cityArray);
 #endif

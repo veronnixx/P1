@@ -1,0 +1,22 @@
+g++ -Wall -ansi -g main.cpp
+main.cpp: In function ‘void run(Vector*)’:
+main.cpp:7:23: error: no matching function for call to ‘initialize(Vector**)’
+     initialize(&cities);
+                       ^
+main.cpp:7:23: note: candidates are:
+In file included from vector.h:4:0,
+                 from main.cpp:1:
+city.h:14:6: note: void initialize(City*)
+ void initialize(City *cityArray);
+      ^
+city.h:14:6: note:   no known conversion for argument 1 from ‘Vector**’ to ‘City*’
+In file included from main.cpp:1:0:
+vector.h:13:6: note: void initialize(Vector)
+ void initialize(Vector cities);
+      ^
+vector.h:13:6: note:   no known conversion for argument 1 from ‘Vector**’ to ‘Vector’
+main.cpp: In function ‘int main()’:
+main.cpp:15:10: warning: unused variable ‘cities’ [-Wunused-variable]
+   Vector cities;
+          ^
+make: *** [main.o] Error 1

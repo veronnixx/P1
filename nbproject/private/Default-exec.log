@@ -1,0 +1,8 @@
+called: g++
+	/home/veronnixx/p1
+	g++
+	-Wall
+	-ansi
+	-g
+	main.cpp
+
