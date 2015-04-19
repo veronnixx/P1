@@ -11,5 +11,7 @@ typedef struct City
   int population;
 } City; //City struct
 
-void initialize(City cityArray);
+
+void initialize(City *cityArray);
+
 #endif

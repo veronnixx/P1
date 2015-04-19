@@ -10,3 +10,4 @@ void initialize(City *cityArray)
   cityArray->airport = NULL; //always has 3 letters + 1 space for '/0' character
   cityArray->population = 0;
 }
+void initialize(City *cityArray);

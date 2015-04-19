@@ -2,14 +2,13 @@
 #include <stdlib.h>
 #include "vector.h"
 #include "city.h"
-
-void initialize(Vector cities)
+void initialize(Vector *cities)
 {
   int i;
   for (i=0;i < 10; i++)
  {
-  cities->cityArray[i] = (City *)malloc(sizeof(City));
-  initialize(cities->cityArray[i]);
+    cities->cityArray[i] = (City *)malloc(sizeof(City));
+    initialize(cities->cityArray[i]);
  }
   //City *cityArray = (City*) malloc(sizeof(City));
   cities->size = 10;
