@@ -7,7 +7,7 @@ void run(Vector *cities)
   initialize(cities);
   readCities(cities);
   return;
-}
+} //interacts with user
 
 
 int main()
@@ -15,5 +15,5 @@ int main()
   Vector cities;
   run(&cities);
   return 0;
-}
+} //run and free the memory in the end
 

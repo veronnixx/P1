@@ -3,12 +3,12 @@
 
 #include "city.h"
 
-typedef struct Vector
+typedef struct VECTOR_STRUCT
 {
-  City *city;
+  City *cityArray;
   int size;
   int count;
-} Vector;
+} Vector; //declares a VECTOR_STRUCT called Vector
 
 void initialize(Vector *cities);
 
