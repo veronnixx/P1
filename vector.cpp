@@ -2,34 +2,27 @@
 #include <stdlib.h>
 #include "vector.h"
 #include "city.h"
+#define MAX 80
 
 void initialize(Vector *cities)
 {
 
-  initialize(cities -> cityArray);
-  cities -> cityArray = (City *) malloc(10 * sizeof(City));
+  initialize(cities -> city);
+  cities -> city = (City *) malloc(10 * sizeof(City));
   
   cities -> size = 10;
   cities -> count = 0;
 
 }
 
-void readCities(City *cityArray)
+void readCities(Vector *cities)
 {
-  FILE *fp;
-  fp =  fopen("citypopulations.csv", "r");
-
-  while(1)
-  {
-    c = fgetc(fp);
-    if(feof(fp))
-      {
-	break;
-      }
-    printf("%c", c);
-  }
- 
-  fclose(fp);
+  char line[MAX];
+  char *value;
+  FILE *file = fopen("citypopulations.csv", "r");
+         while (fgets(line, MAX, file)) {
+	   value = strtok(line, ","); 
+	     
+	 }
 }
-
-  
+ 
