@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "vector.h"
 #include "city.h"
 
@@ -23,7 +24,51 @@ void readCities(Vector *cities)
   
   while (fgets(line, 80, file)) 
     {
-        value = strtok(line, ",");   
+        value = strtok(line, ",");   // get the first token
+	while( value != NULL ) // walk through other tokens
+	     {
+	             printf( " %s\n", value );
+value = strtok(NULL, ",");
+	     }
+
     } // loops through the lines with "," as a delimeter
 } //reads and parses citypopulations.csv
+
+
+
+void resize(Vector *cities)
+{
+ // initilaze(//upper half of the array)
+  //malloc of City
+  //free cityArray
+} //resize the array
+
+void readAirports(Vector *cities)
+{
+   
+} //read airportsLL.txt
+
+
+
+
+
+
+void cleanCities(Vector *cities)
+{
  
+} //remove cities without airports from the array
+
+int findAirport(const Vector *cities, const char *airport)
+{
+	return 0;  
+} //finds appropriate airport
+
+void calcDistance(const Vector *cities, int index1, int index2)
+{
+  
+}//calculate distance
+
+
+
+
+

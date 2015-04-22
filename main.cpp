@@ -12,6 +12,7 @@ void run(Vector *cities)
 
 int main()
 {
+  printf("Please enter two airport abbreviations (XXX XXX = done): ");
   Vector cities;
   run(&cities);
   return 0;
