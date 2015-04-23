@@ -4,7 +4,6 @@
 #include "vector.h"
 #include "city.h"
 
-
 void initialize(Vector *cities)
 {
 
