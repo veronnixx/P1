@@ -18,7 +18,7 @@ void copyLocation(City *destCity, const City *srcCity);
 bool hasAirport(City *cityArray);
 bool isEqual(const City *cityArray, const City *city2);
 void readAirport(City *cityArray, char *line);
-//void readCity(City *city, FILE *fp);
+void readCity(City *city, FILE *fp);
 void setAirport(City *cityArray, const char *airport);
 
 #endif // CITY_H

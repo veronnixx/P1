@@ -21,27 +21,28 @@ void readCities(Vector *cities)
   int count = 0;  
   char line[80];
   char *value;
+  int i = 0;
+  City *arrayTemp = (City *)malloc(sizeof(City) * 10);
   FILE *file = fopen("citypopulations.csv", "r");
   
-  while (fgets(line, 80, file)) 
-    {   
-      for(i=0; i<
+  while (fgets(line, 100, file))
+    {
+	if (i == cities -> size)
+          resize(cities);
+	cities->cityArray[i] = (City *) malloc(sizeof(City));
 	printf("%s", line);
 
-        value = strtok(line, ",");  
-	cities->cityArray = (City *) malloc(1+sizeof(City));	
-	strcpy(cities->cityArray[i].name,value); 
-
-	value = strtok(NULL,",");
-	cities->cityArray = (City *) malloc(1+sizeof(City));
-	strcpy(cities->cityArray[i].state,value);
+        value = strtok(line, ",");
+	strcpy(cities->cityArray[i].name, value);
 
 	value = strtok(NULL, ",");
-	cities->cityArray = (City *) malloc(1+sizeof(City));
+	strcpy(cities->cityArray[i].state, value);
+
+	value = strtok(NULL, ",");
 	cities->cityArray[i].population = atoi(value);
 
 	cities->count++;
-	cities->cityArray = 
+	i++;
     } // loops through the lines with "," as a delimeter
 } //reads and parses citypopulations.csv
 
