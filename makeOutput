@@ -1,0 +1,12 @@
+g++ -Wall -ansi -g -c main.cpp
+g++ -Wall -ansi -g -c city.cpp
+city.cpp: In function ‘bool isEqual(const City*, const City*)’:
+city.cpp:22:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ } //compares the names of 2 city names and returns bool
+ ^
+city.cpp: In function ‘bool hasAirport(City*)’:
+city.cpp:38:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ } //checks whether a city has an airport, returns bool
+ ^
+g++ -Wall -ansi -g -c vector.cpp
+g++ -Wall -ansi -g main.o city.o vector.o -o simulator.out

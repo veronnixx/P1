@@ -1,0 +1,4 @@
+Design error: name and/or state not freed in deallocate of city.cpp.
+Design error: deallocate( missing from vector.cpp.
+Design error: cityArray not freed or deleted in deallocate of vector.cpp.
+esign error: cityArray elements not passed to deallocate() of city.cpp in deallocate of vector.cpp.

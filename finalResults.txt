@@ -1,0 +1,9 @@
+Scores from p1 for Scott, Veronica 
+Addresses used: verscott@ucdavis.edu  
+Style: 7 out of 9
+Design: 19 out of 23
+Const: 7 out of 7
+Operation: 0 out of 11
+Warnings (subtracted final score down to zero): 2
+Your program did not work so you will only receive points for design and consts.
+Total: 26 out of 50.

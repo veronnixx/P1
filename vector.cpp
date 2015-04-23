@@ -4,6 +4,7 @@
 #include "vector.h"
 #include "city.h"
 
+
 void initialize(Vector *cities)
 {
 
@@ -17,23 +18,32 @@ void initialize(Vector *cities)
 
 void readCities(Vector *cities)
 {
+  int count = 0;  
   char line[80];
   char *value;
   FILE *file = fopen("citypopulations.csv", "r");
   
   while (fgets(line, 80, file)) 
-    {
-        value = strtok(line, ",");   // get the first token
-	while( value != NULL ) // walk through other tokens
-	     {
-	             printf( " %s\n", value );
-value = strtok(NULL, ",");
-	     }
+    {   
+      for(i=0; i<
+	printf("%s", line);
 
+        value = strtok(line, ",");  
+	cities->cityArray = (City *) malloc(1+sizeof(City));	
+	strcpy(cities->cityArray[i].name,value); 
+
+	value = strtok(NULL,",");
+	cities->cityArray = (City *) malloc(1+sizeof(City));
+	strcpy(cities->cityArray[i].state,value);
+
+	value = strtok(NULL, ",");
+	cities->cityArray = (City *) malloc(1+sizeof(City));
+	cities->cityArray[i].population = atoi(value);
+
+	cities->count++;
+	cities->cityArray = 
     } // loops through the lines with "," as a delimeter
 } //reads and parses citypopulations.csv
-
-
 
 void resize(Vector *cities)
 {

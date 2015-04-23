@@ -1,0 +1,22 @@
+Processing :  /home/scottver/ecs40/p1/city.cpp
+Processing :  /home/scottver/ecs40/p1/city.h
+Processing :  /home/scottver/ecs40/p1/main.cpp
+Processing :  /home/scottver/ecs40/p1/vector.cpp
+/home/scottver/ecs40/p1/vector.cpp(28, 0):  Do not use tab for indent  [RULE_4_1_A_B_use_space_for_indentation] 
+/home/scottver/ecs40/p1/vector.cpp(58, 0):  Do not use tab for indent  [RULE_4_1_A_B_use_space_for_indentation] 
+Processing :  /home/scottver/ecs40/p1/vector.h
+
+
+=================================== Summary Report ===================================
+ ** Total Available Rules     : 52
+ ** Total Applied Rules       : 34
+ ** Total Violated Rules      : 1
+ ** Total Errors Occurs       : 2
+ ** Total Analyzed Files      : 5
+ ** Total Violated Files Count: 1
+ ** Build Quality             : 80.00%
+
+================================ Violated Rule Details ===============================
+ -  RULE_4_1_A_B_use_space_for_indentation rule violated : 2
+
+================================ Violated File Details ===============================
