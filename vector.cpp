@@ -48,9 +48,11 @@ void readCities(Vector *cities)
 
 void resize(Vector *cities)
 {
- // initilaze(//upper half of the array)
+  arrayTemp = (City *) malloc(sizeof(City) * 10));
+  // initilaze(//upper half of the array)
   //malloc of City
-  //free cityArray
+  cities -> size *= 2;
+  free(arrayTemp);
 } //resize the array
 
 void readAirports(Vector *cities)
